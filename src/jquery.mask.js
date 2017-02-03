@@ -184,6 +184,9 @@
                     r = el[method]();
                 }
 
+                if(isInput)
+                  el.change(); //don't know if this line will work when using Zepto
+
                 return r;
             },
             calculateCaretPosition: function(caretPos, newVal) {
@@ -499,6 +502,12 @@
         return this.data('mask').getCleanVal();
     };
 
+    //copies to use if rewrited by another plugin
+    $.fn.jMask_mask = $.fn.mask;
+    $.fn.jMask_masked = $.fn.masked;
+    $.fn.jMask_unmask = $.fn.unmask;
+    $.fn.jMask_cleanVal = $.fn.cleanVal;
+
     $.applyDataMask = function(selector) {
         selector = selector || $.jMaskGlobals.maskElements;
         var $selector = (selector instanceof $) ? selector : $(selector);
@@ -506,11 +515,11 @@
     };
 
     var globals = {
-        maskElements: 'input,td,span,div',
+        maskElements: 'input',
         dataMaskAttr: '*[data-mask]',
-        dataMask: true,
+        dataMask: false,
         watchInterval: 300,
-        watchInputs: true,
+        watchInputs: false,
         // old versions of chrome dont work great with input event
         useInput: !/Chrome\/[2-4][0-9]|SamsungBrowser/.test(window.navigator.userAgent) && eventSupported('input'),
         watchDataMask: false,
@@ -520,7 +529,9 @@
             '9': {pattern: /\d/, optional: true},
             '#': {pattern: /\d/, recursive: true},
             'A': {pattern: /[a-zA-Z0-9]/},
-            'S': {pattern: /[a-zA-Z]/}
+            'Z': {pattern: /[a-zA-Z0-9]/, optional: true},
+            'S': {pattern: /[a-zA-Z]/},
+            'X': {pattern: /[a-zA-Z]/, optional:true}
         }
     };
 
