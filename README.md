@@ -1,8 +1,5 @@
 #jQuery Mask Plugin
-A jQuery Plugin to make masks on form fields and HTML elements.
-
-[![Build Status](https://travis-ci.org/igorescobar/jQuery-Mask-Plugin.png)](https://travis-ci.org/igorescobar/jQuery-Mask-Plugin)
-[![Code Climate](https://codeclimate.com/github/igorescobar/jQuery-Mask-Plugin.png)](https://codeclimate.com/github/igorescobar/jQuery-Mask-Plugin)
+A jQuery Plugin to make masks on form fields and HTML elements. Now working properly with Angular model on inputs.
 
 #Documentation, Demos & Usage Examples
 https://igorescobar.github.io/jQuery-Mask-Plugin/
@@ -30,7 +27,7 @@ https://igorescobar.github.io/jQuery-Mask-Plugin/
 
 ## Install it via Package Managers
 ### Bower
-`bower install jquery-mask-plugin`
+`bower install angular-jquery-mask-plugin`
 ### NPM
 `npm i jquery-mask-plugin`
 ### Meteor

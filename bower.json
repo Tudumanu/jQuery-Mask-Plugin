@@ -1,7 +1,8 @@
 {
-  "name": "jquery-mask-plugin",
+  "name": "angular-jquery-mask-plugin",
   "version": "1.14.9",
   "main": "dist/jquery.mask.js",
+  "homepage": "https://github.com/Tudumanu/jQuery-Mask-Plugin",
   "ignore": [
     "deploy.rb",
     "jquery.mask.json",
