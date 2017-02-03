@@ -184,8 +184,9 @@
                     r = el[method]();
                 }
 
-                if(isInput)
-                  el.change(); //don't know if this line will work when using Zepto
+                if(isInput) {
+                    el.change(); //don't know if this line will work when using Zepto
+                }
 
                 return r;
             },
@@ -503,10 +504,10 @@
     };
 
     //copies to use if rewrited by another plugin
-    $.fn.jMask_mask = $.fn.mask;
-    $.fn.jMask_masked = $.fn.masked;
-    $.fn.jMask_unmask = $.fn.unmask;
-    $.fn.jMask_cleanVal = $.fn.cleanVal;
+    $.fn.jMaskMask = $.fn.mask;
+    $.fn.jMaskMasked = $.fn.masked;
+    $.fn.jMaskUnmask = $.fn.unmask;
+    $.fn.jMaskCleanVal = $.fn.cleanVal;
 
     $.applyDataMask = function(selector) {
         selector = selector || $.jMaskGlobals.maskElements;
