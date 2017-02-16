@@ -1,6 +1,6 @@
 /**
  * jquery.mask.js
- * @version: v1.14.9
+ * @version: v1.14.10
  * @author: Igor Escobar
  * @author: Tadeu B A Sampaio
  *
@@ -187,7 +187,7 @@
                 }
 
                 if(isInput) {
-                    el.change(); //don't know if this line will work when using Zepto
+                    el.change();
                 }
 
                 return r;

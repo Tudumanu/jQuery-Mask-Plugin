@@ -1,3 +1,7 @@
+== v1.14.10 (Fev/16 2017 11:43 +0000 by Tadeu B A Sampaio) ==
+
+* calling .change() to work properly on angular v1
+
 == v1.14.9 (Jan/25 2017 11:17 +0000 by Igor Escobar) ==
 
 Bugfixes:
