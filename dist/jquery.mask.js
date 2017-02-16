@@ -187,7 +187,7 @@
                 }
 
                 if(isInput) {
-                    el.change(); //don't know if this line will work when using Zepto
+                    el.change();
                 }
 
                 return r;
