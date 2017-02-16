@@ -29,7 +29,7 @@ https://igorescobar.github.io/jQuery-Mask-Plugin/
 ### Bower
 `bower install angular-jquery-mask-plugin`
 ### NPM
-`npm i jquery-mask-plugin`
+`npm i angular-jquery-mask-plugin`
 ### Meteor
 `meteor add igorescobar:jquery-mask-plugin`
 ### Packagist/Composer

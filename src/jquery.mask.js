@@ -2,8 +2,10 @@
  * jquery.mask.js
  * @version: v1.14.9
  * @author: Igor Escobar
+ * @author: Tadeu B A Sampaio
  *
  * Created by Igor Escobar on 2012-03-10. Please report any bug at http://blog.igorescobar.com
+ * Changed by Tadeu B A Sampaio on 2017-02-16. In order to work correctly with Angular 1
  *
  * Copyright (c) 2012 Igor Escobar http://blog.igorescobar.com
  *

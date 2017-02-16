@@ -1,5 +1,5 @@
 {
-  "name": "jquery-mask-plugin",
+  "name": "angular-jquery-mask-plugin",
   "version": "1.14.9",
   "description": "A jQuery Plugin to make masks on form fields and html elements.",
   "author": "Igor Escobar <blog@igorescobar.com>",
@@ -7,7 +7,7 @@
   "main": "./dist/jquery.mask.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/igorescobar/jQuery-Mask-Plugin"
+    "url": "https://github.com/Tudumanu/jQuery-Mask-Plugin"
   },
   "bugs": {
     "url": "https://github.com/igorescobar/jQuery-Mask-Plugin/issues"
