@@ -1,6 +1,8 @@
 var QUNIT = true;
 $(document).ready(function(){
 
+    $.applyDataMask();
+
     var testfield = $('.simple-field'),
         testfieldDataMask = $('.simple-field-data-mask'),
         testfieldDataMaskWithReverse = $('.simple-field-data-mask-reverse'),
@@ -492,7 +494,7 @@ $(document).ready(function(){
       testfield.unmask();
 
       var callback = sinon.spy();
-      var mock = sinon.mock()
+      var mock = sinon.mock();
       var typeAndBlur = function(typedValue){
         testfield.trigger('keydown');
         testfield.val(typedValue);
@@ -519,7 +521,7 @@ $(document).ready(function(){
       typeAndBlur("12345678912");
 
       equal(testfield.val(), "123.(456).789/1-2" );
-      equal(true, sinon.match(11).or(12).test(callback.callCount))
+      equal(sinon.match(64).or(65).test(callback.callCount), true);
 
       testfield.off("change");
       testfield.unmask();
