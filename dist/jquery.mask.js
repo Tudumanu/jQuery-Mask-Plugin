@@ -527,6 +527,7 @@
         useInput: !/Chrome\/[2-4][0-9]|SamsungBrowser/.test(window.navigator.userAgent) && eventSupported('input'),
         watchDataMask: false,
         byPassKeys: [9, 16, 17, 18, 36, 37, 38, 39, 40, 91],
+        clearIfNotMatch: true,
         translation: {
             '0': {pattern: /\d/},
             '9': {pattern: /\d/, optional: true},
