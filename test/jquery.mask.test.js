@@ -521,7 +521,7 @@ $(document).ready(function(){
       typeAndBlur("12345678912");
 
       equal(testfield.val(), "123.(456).789/1-2" );
-      equal(sinon.match(64).or(65).test(callback.callCount), true);
+      equal(sinon.match(12).or(13).test(callback.callCount), true);
 
       testfield.off("change");
       testfield.unmask();
